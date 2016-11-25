@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		056CE0BC1DE706AE00645358 /* ol.css in Resources */ = {isa = PBXBuildFile; fileRef = 056CE0BA1DE706AE00645358 /* ol.css */; };
+		056CE0BD1DE706AE00645358 /* ol.js in Resources */ = {isa = PBXBuildFile; fileRef = 056CE0BB1DE706AE00645358 /* ol.js */; };
+		19C62B541941A613008FE3C2 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C62B531941A613008FE3C2 /* QuickLook.framework */; };
+		19C62B561941A613008FE3C2 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C62B551941A613008FE3C2 /* ApplicationServices.framework */; };
+		19C62B581941A613008FE3C2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C62B571941A613008FE3C2 /* CoreServices.framework */; };
+		19C62B5A1941A613008FE3C2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C62B591941A613008FE3C2 /* CoreFoundation.framework */; };
+		19C62B621941A613008FE3C2 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C62B611941A613008FE3C2 /* GenerateThumbnailForURL.m */; };
+		19C62B641941A613008FE3C2 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C62B631941A613008FE3C2 /* GeneratePreviewForURL.m */; };
+		19C62B661941A613008FE3C2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 19C62B651941A613008FE3C2 /* main.c */; };
+		19C62B6E1941AEC4008FE3C2 /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 19C62B6D1941AEC4008FE3C2 /* template.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		056CE0BA1DE706AE00645358 /* ol.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = ol.css; path = openlayers/ol.css; sourceTree = "<group>"; };
+		056CE0BB1DE706AE00645358 /* ol.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ol.js; path = openlayers/ol.js; sourceTree = "<group>"; };
+		19C62B501941A613008FE3C2 /* quicklook-gpx.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "quicklook-gpx.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C62B531941A613008FE3C2 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		19C62B551941A613008FE3C2 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		19C62B571941A613008FE3C2 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		19C62B591941A613008FE3C2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		19C62B5D1941A613008FE3C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C62B611941A613008FE3C2 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		19C62B631941A613008FE3C2 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		19C62B651941A613008FE3C2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		19C62B6D1941AEC4008FE3C2 /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19C62B4B1941A613008FE3C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C62B5A1941A613008FE3C2 /* CoreFoundation.framework in Frameworks */,
+				19C62B541941A613008FE3C2 /* QuickLook.framework in Frameworks */,
+				19C62B581941A613008FE3C2 /* CoreServices.framework in Frameworks */,
+				19C62B561941A613008FE3C2 /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C62B451941A613008FE3C2 = {
+			isa = PBXGroup;
+			children = (
+				19C62B5B1941A613008FE3C2 /* quicklook-gpx */,
+				19C62B521941A613008FE3C2 /* Frameworks */,
+				19C62B511941A613008FE3C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19C62B511941A613008FE3C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19C62B501941A613008FE3C2 /* quicklook-gpx.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19C62B521941A613008FE3C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19C62B531941A613008FE3C2 /* QuickLook.framework */,
+				19C62B551941A613008FE3C2 /* ApplicationServices.framework */,
+				19C62B571941A613008FE3C2 /* CoreServices.framework */,
+				19C62B591941A613008FE3C2 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19C62B5B1941A613008FE3C2 /* quicklook-gpx */ = {
+			isa = PBXGroup;
+			children = (
+				19C62B611941A613008FE3C2 /* GenerateThumbnailForURL.m */,
+				19C62B631941A613008FE3C2 /* GeneratePreviewForURL.m */,
+				19C62B6D1941AEC4008FE3C2 /* template.html */,
+				19C62B651941A613008FE3C2 /* main.c */,
+				19C62B5D1941A613008FE3C2 /* Info.plist */,
+				056CE0BA1DE706AE00645358 /* ol.css */,
+				056CE0BB1DE706AE00645358 /* ol.js */,
+			);
+			name = "quicklook-gpx";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19C62B4C1941A613008FE3C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19C62B4F1941A613008FE3C2 /* quicklook-gpx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C62B6A1941A613008FE3C2 /* Build configuration list for PBXNativeTarget "quicklook-gpx" */;
+			buildPhases = (
+				19C62B4A1941A613008FE3C2 /* Sources */,
+				19C62B4B1941A613008FE3C2 /* Frameworks */,
+				19C62B4C1941A613008FE3C2 /* Headers */,
+				19C62B4D1941A613008FE3C2 /* Resources */,
+				19C62B4E1941A613008FE3C2 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "quicklook-gpx";
+			productName = quickgeojson;
+			productReference = 19C62B501941A613008FE3C2 /* quicklook-gpx.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19C62B461941A613008FE3C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = io.github.vibrog;
+				TargetAttributes = {
+					19C62B4F1941A613008FE3C2 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 19C62B491941A613008FE3C2 /* Build configuration list for PBXProject "quicklook-gpx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 19C62B451941A613008FE3C2;
+			productRefGroup = 19C62B511941A613008FE3C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19C62B4F1941A613008FE3C2 /* quicklook-gpx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19C62B4D1941A613008FE3C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056CE0BD1DE706AE00645358 /* ol.js in Resources */,
+				056CE0BC1DE706AE00645358 /* ol.css in Resources */,
+				19C62B6E1941AEC4008FE3C2 /* template.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		19C62B4E1941A613008FE3C2 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19C62B4A1941A613008FE3C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C62B621941A613008FE3C2 /* GenerateThumbnailForURL.m in Sources */,
+				19C62B641941A613008FE3C2 /* GeneratePreviewForURL.m in Sources */,
+				19C62B661941A613008FE3C2 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		19C62B681941A613008FE3C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		19C62B691941A613008FE3C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		19C62B6B1941A613008FE3C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.vibrog.quicklook-gpx";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		19C62B6C1941A613008FE3C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.vibrog.quicklook-gpx";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19C62B491941A613008FE3C2 /* Build configuration list for PBXProject "quicklook-gpx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C62B681941A613008FE3C2 /* Debug */,
+				19C62B691941A613008FE3C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19C62B6A1941A613008FE3C2 /* Build configuration list for PBXNativeTarget "quicklook-gpx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C62B6B1941A613008FE3C2 /* Debug */,
+				19C62B6C1941A613008FE3C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19C62B461941A613008FE3C2 /* Project object */;
+}

@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>QuickLook GPX</title>
+<link rel="stylesheet" href="cid:ol.css" type="text/css"/>
+<script src="cid:ol.js"></script>
+<style>
+body, #map {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.ol-control button {
+  background-color: rgba(34,34,34,0.5);
+}
+.ol-control button:hover,
+.ol-control button:focus {
+  text-decoration: none;
+  background-color: rgba(34,34,34,0.7);
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+var geoDataString = `{{GEODATASTRING}}`;
+var bgLayer = new ol.layer.Tile({
+  source: new ol.source.XYZ({
+    attributions: '<a href="http://kartverket.no/">Kartverket</a>',
+    url: 'http://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo2graatone&zoom={z}&x={x}&y={y}'
+  })
+});
+var gpxLayer = new ol.layer.Vector({
+  source: new ol.source.Vector({
+    features: (new ol.format.GPX()).readFeatures(geoDataString, {
+      featureProjection: 'EPSG:3857'
+    })
+  }),
+  style: new ol.style.Style({
+    stroke: new ol.style.Stroke({
+      color: 'rgba(87,7,102,0.9)', width: 4
+    }),
+    image: new ol.style.Circle({
+      radius: 7.5,
+      stroke: new ol.style.Stroke({color: 'rgba(87,7,102,0.9)', width: 1}),
+      fill: new ol.style.Fill({color: 'rgba(87,7,102,0.5)'})
+    })
+  })
+});
+var map = new ol.Map({
+  layers: [ bgLayer, gpxLayer ],
+  target: 'map'
+});
+var extent = gpxLayer.getSource().getExtent();
+map.getView().fit(extent, map.getSize());
+</script>
+</body>
+</html>
