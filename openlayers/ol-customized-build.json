@@ -1,0 +1,37 @@
+{
+  "exports": [
+    "ol.Map",
+    "ol.Map#getView",
+    "ol.Map#getSize",
+    "ol.View",
+    "ol.View#fit",
+    "ol.control.defaults",
+    "ol.layer.Tile",
+    "ol.source.XYZ",
+    "ol.layer.Vector",
+    "ol.layer.Vector#getSource",
+    "ol.source.Vector",
+    "ol.source.Vector#getExtent",
+    "ol.format.GPX",
+    "ol.format.GPX#readFeatures",
+    "ol.Feature",
+    "ol.style.Style",
+    "ol.style.Stroke",
+    "ol.style.Fill",
+    "ol.style.Circle"
+  ],
+  "compile": {
+    "externs": [
+      "externs/oli.js",
+      "externs/olx.js"
+    ],
+    "define": [
+      "ol.ENABLE_WEBGL=false",
+      "ol.ENABLE_PROJ4JS=false",
+      "ol.ENABLE_IMAGE=false",
+      "ol.DEBUG=false"
+    ],
+    "compilation_level": "ADVANCED",
+    "manage_closure_dependencies": true
+  }
+}
