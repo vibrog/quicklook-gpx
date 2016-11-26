@@ -11,8 +11,8 @@ background map tiles, edit `template.html` and change `ol.source.XYZ`.
 
 ### Installation Instructions
 
-- Build the project in XCode by going to Product -> Archive. 
-- Then click the **Export…** button, and save to a folder.
-- Copy the resulting file `Products/Library/QuickLook/quicklook-gpx.qlgenerator` to `~/Library/QuickLook/`.
+- Build the project in XCode by going to **Product** > **Build**. 
+- Then expand **Products** in the Project navigator, right click `quicklook-gpx.qlgenerator` and choose **Show in Finder**.
+- Copy `quicklook-gpx.qlgenerator` to `~/Library/QuickLook/`.
   (You may need to create the QuickLook folder if it doesn't exist.)
 - Finder may pick it up automatically, but if it doesn't, you can run `qlmanage -r` to reload the plugins.
