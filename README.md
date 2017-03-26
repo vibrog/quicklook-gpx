@@ -16,3 +16,11 @@ background map tiles, edit `template.html` and change `ol.source.XYZ`.
 - Copy `quicklook-gpx.qlgenerator` to `~/Library/QuickLook/`.
   (You may need to create the QuickLook folder if it doesn't exist.)
 - Finder may pick it up automatically, but if it doesn't, you can run `qlmanage -r` to reload the plugins.
+
+### Building OpenLayers
+
+    npm install openlayers
+    cd node_modules/openlayers
+    node tasks/build.js ../../openlayers/ol-customized-build.json ../../openlayers/ol.js
+    cp -p css/ol.css ../../openlayers/
+

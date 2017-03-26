@@ -22,6 +22,7 @@
   ],
   "compile": {
     "externs": [
+      "externs/closure-compiler.js",
       "externs/oli.js",
       "externs/olx.js"
     ],
